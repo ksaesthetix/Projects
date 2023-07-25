@@ -1,6 +1,6 @@
-# Python_Projects
+## Projects
 
-This is a repository primarily for my Python Projects. 
+This is a repository for all my Coding Projects. 
 
  - This will entail Data Analysis, GUI development, simple apps and more...
 
