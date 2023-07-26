@@ -19,8 +19,9 @@
   <h2 class="logo">Kieran<span> Shah</span></h2>
       <div class="search-bar">
       <input type="text" placeholder="Search">
-      <input type="submit" value="Search">
-    </div>             
+      <button type="button">Search</button>
+    </div>     
+            
   <div class="mobile-menu">
     <div class="menu-icon" onclick="toggleMenu()">
       <div class="icon-bar"></div>
@@ -28,7 +29,15 @@
       <div class="icon-bar"></div>
     </div>
   </div>
-              
+<!-- Icon bar starts here -->
+  <div class="icon-bar">
+    <a href="https://ksaesthetix.github.io/Projects/index.html"><i class="fas fa-home"></i></a>
+    <a href="#"><i class="fas fa-info-circle"></i></a>
+    <a href="https://ksaesthetix.github.io/Projects/Data_Analytics.html"><i class="fas fa-chart-bar"></i></a>
+    <a href="#"><i class="fas fa-mobile-alt"></i></a>
+    <a href="#"><i class="fab fa-python"></i></a>
+  </div>
+<!-- Icon bar ends here -->              
   <ul id="menu-links">
     <li><a href="https://ksaesthetix.github.io/Projects/index.html">Home</a></li>
     <li><a href="#">About</a></li>
@@ -145,6 +154,7 @@ function toggleMenu() {
   var menuLinks = document.getElementById("menu-links");
   menuLinks.classList.toggle("show");
 }
-    </script> 
-</body>
+</script> 
+
+    </body>
 </html>
