@@ -3,56 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kieran Shah's Portfolio</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,
+    700;1,100;1,200;1,300;1,400;1,500;1,600;1, 700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYD
+    sLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1>Kieran Shah's Projects</h1>
         <!-- Navigation links -->
-        <nav>
+        <!----hero Section Start---->
+         <div class="hero">
+            <nav>
+            <h2 class ="logo">Portfo<span>lio</span></h2>
             <ul>
-                <li><a href="https://ksaesthetix.github.io/Projects/index.html">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="https://ksaesthetix.github.io/Projects/Data_Analytics.html">Data Analytics</a></li>
-                <!-- Add more navigation links as needed -->
+                <li><a href="https://ksaesthetix.github.io/Projects/index.html">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="https://ksaesthetix.github.io/Projects/Data_Analytics.html">Data Analytics</a> </li>
+                <li><a href="#">App Development</a> </li>
+                <li><a href="#">Python GUI Development </a> </li>
             </ul>
-        </nav>
+            <a href="#"class="btn" >Follow</a> 
+            </nav>
     </header>
+            <!----content section---->  
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Kieran Shah</h1>
+                <h3>I am a Junior Systems Accountant</h3>
+                <div class="newsletter">
+                <form>
+                    <input type="Email" name="Email" id="Mail" placeholder="Enter Your Email">
+                    <input type="Submit" name="Submit" value="Sign Up">
+                </form>
+                </div>
+            </div>
+            </div> 
 
-    <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>
-                <!-- Add some information about yourself here -->
-            </p>
-        </section>
+            <!----About section start---->
+            <section class="about">
+                <div class="main">
+                <img src="img/main-img.png">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Developer <span>& Designer</span></h5>
+                    <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more 
+                    interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+                    <button type="button">Let's Talk</button>
+                </div>
+                </div>
+            </section>
 
-        <section id="my-projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li>
-                    <!-- Add information about your projects here -->
-                    <a>Data Analytics</a>
-                    <p></p>
-                </li>
-                <li>
-                    <!-- Add information about another project here -->
-                    <a>GUI Development </a>
-                </li>
-                <!-- Add more projects as needed -->
-                <li>
-                    <a>Apps </a>
-                </li
-            </ul>
-        </section>
-    </main>
+                <!------Contact Me------>
+            <div class="contact-form">
+                <p>Contact Me:</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message:</label>
 
+                    <textarea id="message" name="message" rows="2" required></textarea>
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+    
+    <!------footer start--------->
     <footer>
+        <p>Kieran Shah</p>
+        <p>For more HTML, CSS, and coding tutorial - please click on the link below to see my github</p>
+        
         <p>Contact Me: stuartshah22@hotmail.com</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
+          <p class="end">CopyRight By Kieran Shah</p>
         <!-- Add any additional footer information or links here -->
     </footer>
 </body>
 </html>
-
-
