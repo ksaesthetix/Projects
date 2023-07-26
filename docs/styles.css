@@ -465,6 +465,23 @@ footer p:nth-child(2){
 	height: auto;
 }
 
+.mobile-menu {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
 	/* Adjust font size and other styles as needed for better mobile readability */
@@ -563,27 +580,23 @@ footer p:nth-child(2){
   .contact-form input[type="submit"] {
     padding: 8px 20px;
   }  
-	.menu {
-        display: none; /* Hide the menu items on mobile by default */
-    }
-
-    .menu-icon {
-        display: block; /* Show the hamburger icon on mobile */
-    }
-
-    .show {
-        display: flex; /* Show the menu items when the hamburger icon is clicked */
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .show li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .mobile-menu {
+    display: block;
+  }
+  ul#menu-links {
+    display: none;
+    padding-left: 0;
+  }
+  ul#menu-links.show {
+    display: block;
+  }
+  ul#menu-links li {
+    display: block;
+    text-align: center;
+  }
+  ul#menu-links li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
 }
