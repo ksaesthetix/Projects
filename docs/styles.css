@@ -562,5 +562,28 @@ footer p:nth-child(2){
 
   .contact-form input[type="submit"] {
     padding: 8px 20px;
-  }
-}  
+  }  
+	.menu {
+        display: none; /* Hide the menu items on mobile by default */
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    .show {
+        display: flex; /* Show the menu items when the hamburger icon is clicked */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .show li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
