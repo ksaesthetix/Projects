@@ -48,6 +48,24 @@ nav ul li a:hover{
     color:#f9004d;
     transition: .4s;
 }
+.menu-icon {
+    display: none; /* Hide the hamburger icon on larger screens */
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
 .btn {
     background-color: #f9004d;
     color:white;
@@ -453,6 +471,8 @@ footer p:nth-child(2){
   
 	nav {
 	  padding: 20px 5%;
+	  align-items: center;
+    	  justify-content: space-between;	
 	}
   
 	.logo {
