@@ -580,23 +580,47 @@ footer p:nth-child(2){
   .contact-form input[type="submit"] {
     padding: 8px 20px;
   }  
+ .mobile-menu {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+/* Add this CSS for smooth sliding animation */
+ul#menu-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+ul#menu-links.show {
+  max-height: 200px; /* Adjust this value to fit your content */
+}
+
+ul#menu-links li {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul#menu-links li a {
+  display: block;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
   .mobile-menu {
     display: block;
-  }
-  ul#menu-links {
-    display: none;
-    padding-left: 0;
-  }
-  ul#menu-links.show {
-    display: block;
-  }
-  ul#menu-links li {
-    display: block;
-    text-align: center;
-  }
-  ul#menu-links li a {
-    display: block;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
   }
 }
