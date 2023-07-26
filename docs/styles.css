@@ -133,6 +133,13 @@ h4{
 	align-items: center;
 	justify-content: space-around;
 }
+  /* CSS to create a circular image */
+.main img {
+    width: 40%; /* Adjust this value to control the size of the circular image */
+    height: 20%; /* Make sure this is the same as the width for a perfect circle */
+    border-radius: 10%;
+    overflow: hidden;
+  }
 .about-text h2{
 	color: white;
 	font-size: 75px;
@@ -426,3 +433,114 @@ footer p:nth-child(2){
 	height: 600px;
 	border: none;
   }
+
+/* CSS to create a circular display */
+.circular-image {
+	width: 150px; /* Adjust this value to control the size of the circular image */
+	height: 150px; /* Make sure this is the same as the width for a perfect circle */
+	border-radius: 50%;
+	overflow: hidden;
+}
+	
+.circular-image img {
+	width: 100%;
+	height: auto;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+	/* Adjust font size and other styles as needed for better mobile readability */
+  
+	nav {
+	  padding: 20px 5%;
+	}
+  
+	.logo {
+	  font-size: 25px;
+	}
+  
+	nav ul li {
+	  padding: 5px 10px;
+	}
+  
+	h1 {
+	  font-size: 40px;
+	}
+  
+	h2 {
+	  font-size: 30px;
+	}
+  
+	h3 {
+	  font-size: 20px;
+	}
+  
+	h4 {
+	  font-size: 16px;
+	}
+  
+	.about img {
+	  width: 100%;
+	}
+  
+	.about-text {
+	  width: 100%;
+	}
+  
+	.main img {
+	  width: 100%;
+	  height: auto;
+	  border-radius: 50%;
+	}
+  
+	.card {
+	  width: 90%;
+	  height: auto;
+	}
+  
+	.title h2 {
+	  font-size: 50px;
+	}
+
+  /* Styles for the Data Analytics Projects section on mobile */
+  #my-projects {
+    padding: 20px 0;
+  }
+
+  #my-projects h2 {
+    font-size: 28px;
+  }
+
+  #my-projects iframe {
+    height: 300px;
+  }
+
+  /* Mobile Styles for the circular display */
+  .circular-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Styles for the Contact Form on mobile */
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+
+  .contact-form h2 {
+    font-size: 30px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form input[type="submit"] {
+    padding: 8px 20px;
+  }
+}  
