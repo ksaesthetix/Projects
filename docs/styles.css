@@ -483,7 +483,12 @@ footer p:nth-child(2){
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 768px) {
+@media only screen 
+and (max-width: 768px)
+and (device-width: 428px) 
+and (device-height: 926px) 
+and (-webkit-device-pixel-ratio: 3)
+{
 	/* Adjust font size and other styles as needed for better mobile readability */
   
 	nav {
