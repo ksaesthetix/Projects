@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #191919;
+}
+
 .hero{ 
     height:100vh;
     width:100%;
@@ -67,6 +71,11 @@ h1{
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
+}
+h2{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 h3{
     color: white;
@@ -302,13 +311,15 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
+
 .contact-form {
-    width: 320px; /* Adjust the width as needed */
+    width: 420px; /* Adjust the width as needed */
     margin: 0 auto;
-    padding: 15px; /* Adjust the padding as needed */
+	margin-bottom: 40px;
+    padding: 25px; /* Adjust the padding as needed */
     background-color: #191919;
-    border-radius: 10px;
-    color: white;
+    border-radius: 20px;
+    color: white; 
   }
   
   .contact-form p {
@@ -317,6 +328,13 @@ footer p:nth-child(2){
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .contact-form h2{
+	color: white;
+	font-size: 45px;
+	margin-bottom: 20px auto;
+	text-align: center;
+}
   
   .contact-form form {
     display: flex;
@@ -333,11 +351,11 @@ footer p:nth-child(2){
   .contact-form textarea {
     padding: 8px;
     border: 2px solid #f9004d;
-    border-radius: 30px;
-    background-color: transparent;
+    border-radius: 15px;
     color: white;
     outline: none;
     margin-bottom: 15px;
+	display:inline-block;
   }
   
   .contact-form textarea {
@@ -368,4 +386,43 @@ footer p:nth-child(2){
   .contact-form input[type="submit"]:disabled {
     background-color: #9e9e9e;
     cursor: not-allowed;
+  }
+
+/* Styles for the Data Analytics Projects section */
+#my-projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#my-projects h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#my-projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#my-projects li {
+  margin: 15px;
+}
+
+#my-projects h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#my-projects iframe {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px; /* Adjust the max-width as needed */
+	height: 600px;
+	border: none;
   }
