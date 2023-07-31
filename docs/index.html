@@ -13,24 +13,19 @@
 <body>
     <header>
         <!-- Navigation links -->
-        <nav>
-            <h2 class="logo">Kieran<span> Shah</span></h2>
-            <div class="mobile-menu">
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <div class="icon-bar"></div>
-                    <div class="icon-bar"></div>
-                    <div class="icon-bar"></div>
-                </div>
-            </div>
-            
-            <ul id="menu-links">
-                <li><a href="https://ksaesthetix.github.io/Projects/index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="https://ksaesthetix.github.io/Projects/Data_Analytics.html">Data Analytics</a></li>
-                <li><a href="#">App Development</a></li>
-                <li><a href="#">Python GUI Development</a></li>
+        <!----hero Section Start---->
+         <div class="hero">
+            <nav>
+            <h2 class ="logo">Kieran<span> Shah</span></h2>
+            <ul>
+                <li><a href="https://ksaesthetix.github.io/Projects/index.html">Home</a> </li>
+                <li><a href="https://ksaesthetix.github.io/Projects/Data_Analytics.html">Data Analytics</a> </li>
+                <li><a href="#">App Development</a> </li>
+                <li><a href="#">Python Development </a> </li>
+                <li><a href="#">Photography Portfolio </a> </li>
             </ul>
-        </nav>
+            <a href="#"class="btn" >Follow</a> 
+            </nav>
     </header>
             <!----content section---->  
             <!----section start---->
@@ -52,7 +47,7 @@
                 <img src="images/data_analytics.png">
                 <div class="about-text">
                     <h2>Data Analytics</h2>
-                    <h5>Data <span>& Analysis</span></h5>
+                    <h5>D <span>& Designer</span></h5>
                     <p>Unveiling insights from data's hidden stories. I can provide clean code and pixel perfect design. I also make the website more & more 
                     interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
                     <button type="button">Click Here</button>
@@ -85,6 +80,19 @@
                 </div>
                 </div>
             </section>
+
+            <section class="about">
+                <div class="main">
+                <img src="images/Photography.png">
+                <div class="about-text">
+                    <h2>Photography Portfolio</h2>
+                    <h5>Developer <span>& Designer</span></h5>
+                    <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more 
+                    interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+                    <button type="button">Click Here</button>
+                </div>
+                </div>
+            </section>
         
                 <!------Contact Me------>
             <div class = "contact-form">
@@ -103,14 +111,13 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
-
+<       
     
     <!------footer start--------->
     <footer>
         <p>Kieran Shah</p>
-        <p>For more HTML, CSS, and coding tutorial - please click on the link below to see my github</p>
+        <p>For more projects,- please click on the link below to see my github</p>
         
-        <p>Contact Me: stuartshah22@hotmail.com</p>
 
         <div class="social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -120,13 +127,5 @@
           <p class="end">CopyRight By Kieran Shah</p>
         <!-- Add any additional footer information or links here -->
     </footer>
-    
-<script>   
-function toggleMenu() {
-  var menuLinks = document.getElementById("menu-links");
-  menuLinks.classList.toggle("show");
-}
-</script> 
-
-    </body>
+</body>
 </html>
